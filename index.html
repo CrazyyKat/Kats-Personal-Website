@@ -14,8 +14,6 @@
 </head>
 
 <body>
-
-   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   
   <!-- navbar -->
   <div id="top" class="topnav">
@@ -32,7 +30,7 @@
 
     <img id="headshot" src="headshot.jpeg" alt="kat's picture!">
 
-    <h1 id="title" class="animate__animated animate__lightSpeedInLeft"> Hello, I'm Kat Cheng! </h1>
+    <h1 id="title" class="animate__animated animate__lightSpeedInLeft animate__delay-4s"> Hello, I'm Kat Cheng! </h1>
 
     <p>I'm an aspiring designer 🎨 and developer 👩🏻‍💻 currently pursuing my bachelor's degree in Electrical
       Engineering and Computer Science at UC Berkeley 🐻. My current research interests include human-computer
@@ -57,8 +55,11 @@
   <!-- work content -->
   <div class="section-divide-margin margin" id="work">
     <h1 class="centered">Work</h1>
+    <p class="centered" style="margin-bottom:50px;">click on the 🔍 icon to learn more about each experience</p>
     
-    <h2 class="centered">STEM Sisters</h2>
+<!--     <div class="inline"><h2 class="centered">STEM Sisters</h2><h2 style="color:white;">-</h2><h2>🔍</h2></div> -->
+
+        <h2 class="centered">STEM Sisters <span onclick="stemSistersInfo()">🔍</span></h2>
 
      <!-- Slideshow container -->
         <div class="slideshow-container">
@@ -118,7 +119,7 @@
       </div>
       <br>  
     
-    <h2 class="centered"><a style="color:black;" href="https://www.kodewithklossy.com/">Kode With Klossy</a> - Instructor Assistant</h2>
+    <h2 class="centered"><a style="color:black;" href="https://www.kodewithklossy.com/">Kode With Klossy</a> - Instructor Assistant <span onclick="KWKInstructorInfo()">🔍</span></h2>
         
       <div class="row centered">
         <img class="downsize" src="kwk1.jpg">
@@ -126,7 +127,8 @@
         <img class="downsize" src="kwk2.jpeg">
       </div>
     
-    <h2 class="top-margin centered">Kode With Klossy - Scholar</h2>
+  <h2 class="top-margin centered">Kode With Klossy - Scholar <span onclick="KWKScholarInfo()">🔍</span></h2>
+    
       <div class="centered"> 
 <!-- was using the hell class before to justify left, but it didn't look good on mobile/smaller screens so I just changed it back to centered class -->
       <li><a href="https://polllie-website.glitch.me/index.html" style="text-decoration: none;">2021 Data Science Camp - Bee Endagerment Awareness Website</a></li>
@@ -134,7 +136,7 @@
       <li><a href="https://janetbasilioleon.github.io/gender-inequality/index.html" style="text-decoration: none;">2019 Web Dev Camp - Gauging the Gender Gap Website</a></li>
       </div>
     
-    <h2 class="top-margin centered"><a href="https://technovationchallenge.org/" style="color:#000;">Technovation Girls</a></h2>
+    <h2 class="top-margin centered"><a href="https://technovationchallenge.org/" style="color:#000;">Technovation Girls</a> <span onclick="technovationInfo()">🔍</span> </h2>
       <div class="centered">
 <!-- also changed this class back to centered -->
       <li><a href="https://www.youtube.com/watch?v=e-oaGpJWodo&t=183s" style="text-decoration: none;">Meliora Demo Video</a></li>

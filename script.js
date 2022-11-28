@@ -1,3 +1,5 @@
+// SLIDESHOW JAVASCRIPT
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -57,26 +59,20 @@ function showSlidesKWK(k) {
   dots[slideIndexKWK-1].className += " active";
 }
 
+// END OF SLIDESHOW JAVASCRIPT
 
-// BUTTON
-
-
-// Get the button
-let mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
+function stemSistersInfo() {
+  alert("STEM Sisters is a club that I started at my high school in 2019 to encourage more girls to get invovled in STEM! This slideshow features pictures from some of our club meetings, events, and a Girls in STEM Day we held to teach 25 elementary and middle school girls about STEM.")
 }
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+function KWKInstructorInfo() {
+  alert("In the summer of 2022, I worked as an Instructor Assistant at Kode With Klossy's Web Development Camp in SF! I taught female students how to build their own websites in less than 2 weeks, facilitated games and brain breaks, and spearheaded sessions discussing the culture of technology.")
+}
+
+function KWKScholarInfo() {
+  alert("During the summers of 2019, 2020, and 2021, I was accepted into Kode With Klossy's two week intensives focused on Web Development, Mobile Development, and Data Science. The following links lead to my final projects from each camp that were created using the languages and platforms featured in each camp curriculum.")
+}
+
+function technovationInfo() {
+  alert("As a part of Technovation Girls, I worked with a group of friends to create an app focusing on improving and upkeeping positive mental health in students. Our app, Meliora, was recognized as a Semifinalist in the competition, scoring within the top 10% of submissions.")
 }
